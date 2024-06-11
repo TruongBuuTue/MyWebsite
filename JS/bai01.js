@@ -1,10 +1,13 @@
+// Tên file: bai01.js
 
-function kiemTraChanLe(so) {
-  if (so % 2 == 0) {
-    console.log("Day la so chan");
-  } else console.log("Day la so le");
+function daoNguocChuoi(chuoi) {
+  // Sử dụng phương thức split để chia chuỗi thành mảng các ký tự
+  // Sau đó sử dụng phương thức reverse để đảo ngược mảng
+  // Cuối cùng sử dụng phương thức join để nối các ký tự thành chuỗi
+  return chuoi.split('').reverse().join('');
 }
 
 // Ví dụ sử dụng
-console.log(kiemTraChanLe(7)); // Kết quả: "Lẻ"
-console.log(kiemTraChanLe(10)); // Kết quả: "Chẵn"
+console.log(daoNguocChuoi("hello")); // Kết quả: "olleh"
+console.log(daoNguocChuoi("abcde")); // Kết quả: "edcba"
+console.log(daoNguocChuoi("12345")); // Kết quả: "54321"
