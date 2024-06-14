@@ -1,2 +1,6 @@
 
-console.log('Hello, World!');
+
+function daoNguocChuoi(chuoi) 
+    {
+    return chuoi.split('').reverse().join('');
+}
